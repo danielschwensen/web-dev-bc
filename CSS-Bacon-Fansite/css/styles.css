@@ -1,0 +1,23 @@
+
+/* Tag Selectors*/
+h1 {
+    color: red;
+}
+
+img:hover {
+    background-color: gold;
+}
+
+/* Class Selectors */
+.bacon {
+    background-color: rgba(255, 99, 71, 0.4);
+}
+
+.broccoli {
+    background-color: rgba(0, 255, 71, 0.4);
+}
+
+/* ID Selectors */
+#heading {
+    color: lightslategray;
+}
