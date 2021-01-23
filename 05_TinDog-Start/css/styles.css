@@ -16,12 +16,23 @@ body {
     color: azure;
 }
 
+
 h1 {
     font-family: 'Montserrat-Black', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
     
 }
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+p {
+    color: #8f8f8f;
+}
+
 .title-image {
     transform: rotate(25deg); 
     width: 60%;
@@ -47,4 +58,24 @@ h1 {
 
 .download-button {
     margin: 5% 3% 5% 0;
+}
+
+/* Feature Section */
+
+.section-icons {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.section-icons:hover {
+    color: #ff4c68;
+}
+
+#features {
+    padding: 7% 15%;
+
+}
+
+.feature-box {
+    text-align: center;
 }
