@@ -116,3 +116,14 @@ p {
 .carousel-item{
     padding: 7% 15%; /* padding: 7% 15%; 7% = Top 2 bottom and 15% = Left 2 right */
 }
+
+/* Pricing Section */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
