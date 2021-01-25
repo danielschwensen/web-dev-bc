@@ -42,6 +42,8 @@ p {
 .title-image {
     transform: rotate(25deg); 
     width: 60%;
+    position:absolute;
+    z-index: 0;
 }
 
 .navbar {
@@ -79,6 +81,9 @@ p {
 
 #features {
     padding: 7% 15%;
+    background-color: #fff;
+    position:sticky;
+    z-index: 1;
 
 }
 
