@@ -132,3 +132,41 @@ p {
 .pricing-column {
     padding: 3% 2%;
 }
+
+/* cta section */
+
+#cta {
+    background-color:  #ff4c68;
+    text-align: center;
+    color: azure;
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    height: 400px;
+    padding: 5% 25% 5%;
+    text-align: center;
+}
+
+.cta-grid-1 {
+    text-align: right;
+}
+
+.cta-grid-2 {
+    text-align: left;
+}
+
+/* Footer  */
+
+#footer {
+    background-color: #fff;
+
+}
+
+.social {
+    padding: 5% 45%  10px;
+    text-align: center;
+}
+.copyright {
+    padding: 0% 20% 5%;
+    text-align: center;
+}
