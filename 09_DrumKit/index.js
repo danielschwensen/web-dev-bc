@@ -8,7 +8,11 @@ document.querySelector("button").addEventListener("click", function () {
 var classname = document.getElementsByClassName("drum");
 
 var clickButtons = function(){
-    alert("I got clicked!")
+    //var audio = new Audio('../09_DrumKit/sounds/snare.mp3');
+    //audio.play();
+    this.style.color = "white";
+    //console.log(this);
+
 };
 
 for (var i = 0; i < classname.length; i++) {
