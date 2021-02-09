@@ -1,20 +1,25 @@
-/*
-document.querySelector("button").addEventListener("click", function () {
-    alert("I got clicked!")
-});
-*/
 
 var classname = document.getElementsByClassName("drum");
 
 var clickButtons = function(){
-    //var audio = new Audio('../09_DrumKit/sounds/snare.mp3');
-    //audio.play();
-    //this.style.color = "white";
-    //console.log(this);
 
     var buttonInnerHTML = this.innerHTML;
+    makeSound(buttonInnerHTML);
+};
 
-    switch (buttonInnerHTML) {
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', clickButtons);
+}
+
+
+document.addEventListener("keydown", function(event){
+    makeSound(event.key);
+});
+
+function makeSound(key){
+    
+
+    switch (key) {
         case "w":
             var audio = new Audio("../09_DrumKit/sounds/crash.mp3");
             audio.play();            
@@ -54,9 +59,4 @@ var clickButtons = function(){
             console.log(buttonInnerHTML);
             break;
     }
-
-};
-
-for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', clickButtons);
 }
