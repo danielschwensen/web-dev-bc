@@ -15,4 +15,3 @@ function nextSequence() {
 
 //Blink
 //$(" #randomChosenColour ").fadeOut(100).fadeIn(100);
-
