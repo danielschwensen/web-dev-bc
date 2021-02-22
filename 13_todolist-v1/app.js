@@ -24,7 +24,6 @@ app.get( "/", function ( req,  res ) {
 
 app.post("/", function (req, res) {
     var item = req.body.newItem;
-    //res.render("list", { newItem: item });
     items.push(item);
     res.redirect("/");
 })
