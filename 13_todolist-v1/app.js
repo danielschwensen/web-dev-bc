@@ -7,6 +7,9 @@ var items = ["Buy food", "Cook Food", "Eat Food"];
 app.set("view engine", "ejs");
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
+//app.use(express.static("/13_todolist-v1/public"));
+
 
 app.get( "/", function ( req,  res ) {
 
