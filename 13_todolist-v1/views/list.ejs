@@ -12,18 +12,23 @@
       <h1 style="color: blueviolet"><%= dayOfTheWeek %></h1>
     </div>
     
-
-    <ul>
-      
+    <div class="box">
       <%  for (var i=0; i<newListItems.length; i++) { %>
-          <li><%= newListItems[i] %></li>
+      <div class="item">
+        <input type="checkbox">
+          <p>  <%= newListItems[i] %>    </p>
+        </div>
       <%  } %>
+      <form class="item" action="/" method="POST">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off"/>
+        <button type="submit" name="button">+</button>
+      </form>
+      
 
-    </ul>
+    </div>
 
-    <form class="" action="/" method="POST">
-      <input type="text" name="newItem" />
-      <button type="submit" name="button">Add</button>
-    </form>
+
+
+
   </body>
 </html>
