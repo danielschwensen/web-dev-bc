@@ -1,6 +1,8 @@
 var pathToSounds = "../11_SimonGame/sounds/";
 var gamePattern = [];
 var userClickedPattern = [];
+var level = 0;
+var started = false;
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
@@ -12,6 +14,9 @@ function nextSequence() {
     
     playSound(randomChosenColour);
     gamePattern.push(randomChosenColour);
+
+    level++;
+    $("#level-title").text("Level " + level);
 }
 
 //Blink
@@ -41,3 +46,13 @@ function animatePress(currentColor) {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
 }
+
+$(document).one("keypress", function (e) {
+  if (!started) {
+
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+
+});
