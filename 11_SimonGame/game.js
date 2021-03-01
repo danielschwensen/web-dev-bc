@@ -29,5 +29,15 @@ $(".btn").click(function() {
   userClickedPattern.push(userChosenColour);
   playSound(userChosenColour);
   //console.log(userClickedPattern);
+  animatePress(userChosenColour);
 
 });
+
+function animatePress(currentColor) {
+  $("#" + currentColor).addClass("pressed");
+
+// remove class after 100 milliseconds
+  setTimeout(function () {
+    $("#" + currentColor).removeClass("pressed");
+  }, 100);
+}
