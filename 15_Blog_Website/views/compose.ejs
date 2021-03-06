@@ -3,12 +3,21 @@
 <h1>Compose</h1>
 <p>
 
-        <form class="" action="/compose" method="post">
-            <input type="text" name="compose" />
-            <button type="submit" name="button">Publish</button>
+        <form action="/compose" method="post">
+            <div class="form-group" >
+            <!-- <input type="text" name="compose" cols="80" /> -->
+            <label>Title</label><br>
+            <textarea class="form-control" name="titleBox" cols="80" rows="1"></textarea>
+        </div>
+            <br>
+            <div class="form-group" >
+            <label>Post</label><br>
+            <textarea class="form-control" name="textBox" cols="80" rows="20"></textarea><br>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
         </form>
+        
+    </p>
 
-
-</p>
 
 <%- include('partials/footer'); -%>
