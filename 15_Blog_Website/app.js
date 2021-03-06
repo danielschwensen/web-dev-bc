@@ -32,12 +32,16 @@ app.get( "/contact", function ( req,  res ) {
 
 app.get( "/compose", function ( req,  res ) {
 
-  res.render("compose", { contact: contactContent });
+  res.render("compose");
+  console.log("Die Seite Compose ist aufgerufen worden");
 });
 
-
-
-
+app.post("/compose", function (req, res) {
+  //var post = req.body.compose;
+  console.log(req.body.compose);
+  //items.push(item);
+  //res.redirect("/");
+})
 
 
 
