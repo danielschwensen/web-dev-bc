@@ -34,12 +34,19 @@ app.get( "/contact", function ( req,  res ) {
 app.get( "/compose", function ( req,  res ) {
 
   res.render("compose");
-  console.log("Die Seite Compose ist aufgerufen worden");
+  //console.log("Die Seite Compose ist aufgerufen worden");
 });
 
 app.post("/compose", function (req, res) {
   //var post = req.body.compose;
-  console.log(req.body.compose);
+  const post = {
+    title: req.body.postTitle,
+    body: req.body.postBody
+  };
+
+  console.log(form.title);
+  console.log(req.body.postBody);
+
   //items.push(item);
   res.redirect("/");
 })
