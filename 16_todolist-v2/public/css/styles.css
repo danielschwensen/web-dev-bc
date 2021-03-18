@@ -2,7 +2,7 @@ html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #3c6cc3 50%, #E4E9FD 50%);
   min-height: 1000px;
-  font-family: 'helvetica neue';
+  font-family: "Merriweather", serif;
 }
 
 h1 {
@@ -90,7 +90,12 @@ input[type="text"]:focus {
 }
 
 footer {
-  color: white;
+  background-color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  position: fixed;  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
 }
